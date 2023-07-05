@@ -25,15 +25,12 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: var(--secondary-font-family);
   font-weight: 700;
+  text-align: -webkit-center;
+  text-align: center;
 }
 
 li{
   list-style: none;
-}
-
-a{
-  color: var(--main-font-color);
-  text-decoration: none;
 }
 
 nav, .home-container, .about-container, .shop-container, .help-container, .cart-container{
@@ -105,7 +102,24 @@ nav ul li:last-child a i{
 /****************Home container*******************/
 /*************************************************/
 
+.home-container{
+  min-height: 90vh;
+  height: auto;
+  flex-direction: column;
+}
 
+.underline{
+  width: 30%;
+  height: 1px;
+  background-color: var(--color-one);
+}
+
+.home-container a{
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  padding: 15px 20px;
+  background-color: var(--main-font-color);
+}
 /*************************************************/
 /****************About container******************/
 /*************************************************/
