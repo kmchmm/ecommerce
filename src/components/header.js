@@ -12,12 +12,17 @@ export const Header = () => {
         <div className='App'>
             <header>
                 <nav className='d-flex justify-content-between'>
-                    <div className='d-flex justify-content-between'>
-                        <img src={logo} alt="Icon Finder Cart"/>
-                        <input type='search' placeholder='Search...'/>
+                    <div className='d-flex justify-content-between align-items-center nav-left'>
+                        <div className='d-flex justify-content-between logo-wrapper'>
+                            <img src={logo} alt="Icon Finder Cart"/>
+                        </div>
+                        <div className='search-wrapper d-flex align-items-center'>
+                            <i class='bx bx-search'></i>
+                            <input type='search' placeholder='Search...'/>
+                        </div>
                     </div>
-                    <div>
-                        <ul className='d-flex justify-content-between'>
+                    <div className='nav-right'>
+                        <ul className='d-flex justify-content-between align-items-center'>
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
@@ -31,7 +36,7 @@ export const Header = () => {
                                 <Link to="/help">Help</Link>
                             </li>
                             <li>
-                                <Link to="/cart">Your Cart</Link>
+                                <Link to="/cart" className='d-flex align-items-center'><i class='bx bxs-cart-alt' ></i> <span>Your Cart</span></Link>
                             </li>
                         </ul>
                     </div>

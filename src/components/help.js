@@ -5,7 +5,9 @@ import '../App.css';
 export const Help = () => {
     return (
         <div className='App'>
-            <h1>Help</h1>
+            <div className='help-container'>
+                <h1>Help</h1>
+            </div>
         </div>
     );
 }

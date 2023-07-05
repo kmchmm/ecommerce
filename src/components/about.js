@@ -5,7 +5,9 @@ import '../App.css';
 export const About = () => {
     return (
         <div className='App'>
-            <h1>Home</h1>
+            <div className='about-container'>
+                <h1>About</h1>
+            </div>
         </div>
     );
 }

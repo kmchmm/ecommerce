@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --main-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Montserrat', sans-serif;
+  --main-font-color: #606060;
+  --secondary-font-color: #ffffff;
+  --color-one: #bfbfbf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: var(--main-font-family);
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a{
+  color: var(--main-font-color);
+  text-decoration: none;
 }
+
+nav, .home-container, .about-container, .shop-container, .help-container, .cart-container{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*************************************************/
+/******************HEADER*************************/
+/*************************************************/
+
+nav{
+  padding-top: 2em;
+}
+.logo-wrapper{
+  margin-right: 2em;
+}
+.logo-wrapper img{
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+}
+
+.nav-left{
+  width: 40%;
+}
+.search-wrapper{
+  width: 100%;
+  position: relative;
+}
+
+.search-wrapper i{
+  position: absolute;
+  left: .7em;
+}
+.search-wrapper input{
+  width: 100%;
+  padding: 5px 15px 5px 35px;
+  border: 2px solid var(--color-one);
+  font-family: var(--main-font-family);
+}
+
+nav ul li a{
+  color: #bfbfbf;
+  text-decoration: none;
+}
+nav li{
+  border-right: 2px solid #bfbfbf;
+  padding: 0 2em;
+}
+nav li:nth-child(4){
+  border-right: none;
+}
+nav ul li:last-child{
+  background-color: var(--main-font-color);
+  padding: 5px 15px;
+  border-right: none;
+}
+nav ul li:last-child a{
+  color: var(--secondary-font-color);
+}
+nav ul li:last-child a i{
+  margin-right: .5em;
+}
+
+
+/*************************************************/
+/****************Home container*******************/
+/*************************************************/
+
+
+/*************************************************/
+/****************About container******************/
+/*************************************************/
+
+/*************************************************/
+/****************Shop container*******************/
+/*************************************************/
+
+/*************************************************/
+/****************Help container*******************/
+/*************************************************/
+
+
+/*************************************************/
+/****************Cart container*******************/
+/*************************************************/

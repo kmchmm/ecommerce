@@ -5,7 +5,9 @@ import '../App.css';
 export const Cart = () => {
     return (
         <div className='App'>
-            <h1>Home</h1>
+            <div className='cart-container'>
+                <h1>Your Cart</h1>
+            </div>
         </div>
     );
 }
