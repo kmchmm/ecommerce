@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
   text-align: -webkit-center;
   text-align: center;
+
 }
 
 li{
@@ -103,23 +104,122 @@ nav ul li:last-child a i{
 /*************************************************/
 
 .home-container{
-  min-height: 90vh;
+  height: auto;
+  color: var(--main-font-color);
+}
+
+.home-container h1, 
+.home-container h2,
+.home-container h3,
+.home-container h4,
+.home-container h5,
+.home-container h6{
+  color: var(--main-font-color);
+}
+.hc-first-section, .hc-second-section{
+  min-height: 100vh;
   height: auto;
   flex-direction: column;
 }
 
+.hc-box-wrapper{
+  gap: 2em;
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+  cursor: pointer;
+}
+.hc-box{
+  width: 100%;
+  min-height: 250px;
+  background-color: var(--main-font-color);
+}
 .underline{
   width: 30%;
   height: 1px;
   background-color: var(--color-one);
 }
 
-.home-container a{
+.hc-first-section a{
   text-decoration: none;
   color: var(--secondary-font-color);
   padding: 15px 20px;
   background-color: var(--main-font-color);
 }
+
+.hc-second-section .hc-box, .hc-fourth-section .hc-box {
+  background-color: var(--secondary-font-color);
+}
+.hc-second-section .hc-box .img-wrapper{
+  width: 100%;
+  min-height: 30vh;
+  margin-bottom: 1em;
+  border: 1px solid var(--color-one);
+  background-color: var(--secondary-font-color);
+}
+
+.hc-third-section{
+  margin-bottom: 10em;
+}
+.newsletter{
+  gap: 3em;
+}
+.newsletter h2{
+  text-align: left;
+  color: var(--main-font-color);
+
+}
+.newsletter .inputs{
+  width: 100%;
+  background-color: #606060;
+}
+.newsletter input{
+  padding: 10px 15px;
+  max-width: 100%;
+}
+.newsletter input[type="submit"]{
+  margin: 0 0 0 .5em;
+  background-color: var(--color-one);
+  border: none;
+  max-width: 100%;
+}
+
+.hc-fourth-section .hc-box .img-wrapper{
+  width: 100%;
+  min-height: 30vh;
+  margin-bottom: 1em;
+  border: 1px solid var(--color-one);
+  background-color: var(--secondary-font-color);
+}
+
+.about-this-shop{
+  max-width: 900px;
+  margin: 10em auto;
+}
+.hc-fifth-section img{
+  max-width: 100px;
+  width: 100%;
+  min-height: 100px;
+}
+
+.hc-fifth-section .location{
+  width: 40%;
+}
+.hc-fifth-section .company-info{
+  width: 100%;
+}
+.company-info li:first-child{
+  margin-bottom: .8em;
+}
+.company-info li{
+  padding: .2em 0;
+}
+.hc-fifth-section a{
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+
 /*************************************************/
 /****************About container******************/
 /*************************************************/
